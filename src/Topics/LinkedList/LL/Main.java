@@ -1,6 +1,8 @@
 package Topics.LinkedList.LL;
 
-public class Mian {
+import java.util.Arrays;
+
+public class Main {
         public static void main(String[] args) {
 //            Add2no list1 = new Add2no();
 //            list1.insertLast(2);
@@ -21,16 +23,25 @@ public class Mian {
 //            System.out.println("Sum of Numbers:");
 //            result.display();
 
-            SegOddEven list1 = new SegOddEven();
-            list1.insertLast(1);
-            list1.insertLast(2);
+            LL list1 = new LL();
             list1.insertLast(3);
+            list1.insertLast(1);
             list1.insertLast(4);
-            list1.insertLast(5);
             list1.insertLast(6);
+            list1.insertLast(2);
             list1.display();
-            list1.oddEvenList();
-            list1.display();
+            LL list2 = new LL();
+            list2.insertLast(1);
+            list2.insertLast(2);
+            list2.insertLast(3);
+            list2.insertLast(4);
+            list2.insertLast(5);
+            list2.insertLast(6);
+            list2.insertLast(7);
+            list2.display();
+
+
+
         }
     }
 

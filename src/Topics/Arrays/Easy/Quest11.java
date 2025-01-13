@@ -9,7 +9,6 @@ public class Quest11 {
         System.out.println(Arrays.toString(nums));
     }
     public static void moveZeroes(int[] nums) {
-
          int j = -1;
         for (int i = 0; i< nums.length; i++) {
             if(nums[i] == 0){
@@ -23,7 +22,6 @@ public class Quest11 {
                 j++;
             }
         }
-
     }
 
     static void swap(int[] nums,int a, int b){

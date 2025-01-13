@@ -9,7 +9,6 @@ public class Quest8 {
         System.out.println(check(nums1));// Output: true
         System.out.println(check(nums2));//Output: false
         System.out.println(check(nums3)); // Output: true
-
     }
     public static boolean check(int[] nums) {
         int count = 0;

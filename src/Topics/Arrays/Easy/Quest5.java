@@ -33,5 +33,4 @@ Sliding window Technique
 1)suppose we have given array  is sorted
 {-1,1,2,3,4,5,6}
 2)maximum sum of subarray  with n(ex=4) elements consecutively
-
- */
+*/

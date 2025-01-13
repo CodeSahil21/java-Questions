@@ -42,6 +42,9 @@ public class Quest4 {
 
     public class KthLargestElement {
         public static int findKthLargest(int[] nums, int k) {
+            if(k > nums.length){
+                return -1;
+            }
             PriorityQueue<Integer> minHeap = new PriorityQueue<>(k);
 
             for (int num : nums) {
@@ -51,7 +54,7 @@ public class Quest4 {
                 }
             }
 
-            return minHeap.peek();
+            return (!minHeap.isEmpty()) ? minHeap.peek():-1;
         }
 
         public static void main(String[] args) {

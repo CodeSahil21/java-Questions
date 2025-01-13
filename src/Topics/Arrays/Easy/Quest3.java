@@ -22,7 +22,6 @@ public class Quest3 {
             // Update max_global to the maximum of max_global and max_current
             max_global = Math.max(max_global,max_current);
         }
-
         // Return the maximum sum found
         return max_global;
     }

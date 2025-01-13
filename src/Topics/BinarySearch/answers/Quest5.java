@@ -19,7 +19,7 @@ public class Quest5 {
     static int sumDiv(int[] arr,int div){
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            sum += Math.ceil((double)(arr[i])/(double)(div));
+            sum += (int) Math.ceil((double)(arr[i])/(double)(div));
         }
         return sum;
     }

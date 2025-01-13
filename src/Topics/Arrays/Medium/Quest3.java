@@ -1,14 +1,12 @@
 package Topics.Arrays.Medium;
 
 import java.util.Arrays;
-
 public class Quest3 {
 //https://www.interviewbit.com/problems/repeat-and-missing-number-array/discussion/
     // repeat and  missing number array
     public static void main(String[] args) {
         int[] arr = {3,1,2,5,3};
         System.out.println(Arrays.toString(repeatedNumber(arr)));
-
     }
     //time complexity and space complexity
     public  static int[] repeatedNumber(final int[] A) {

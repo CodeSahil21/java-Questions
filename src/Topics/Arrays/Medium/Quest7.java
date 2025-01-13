@@ -19,13 +19,12 @@ public class Quest7 {
 //        }
 //        return max;
 //    }
-
-    //
+//
     public static  int maxProduct(int[] nums) {
        int maxproduct = nums[0];
-       int minproduct  =  nums[0];
-       int result = nums[0];
-        for (int i = 1; i < nums.length ; i++) {
+       int minproduct = nums[0];
+       int result =     nums[0];
+        for(int i = 1; i < nums.length ; i++) {
             int current = nums[i];
             //if current number is negative swap maxproduct and minproduct
             if(current < 0){
