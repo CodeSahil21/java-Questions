@@ -13,7 +13,7 @@ public class Quest10 {
     }
 
     //no of rotation will always be r = r % N  where N = arr.length ex if N = 7 and r = 8;no of rotation = 1 because after every
-    //N roattion it will return to being its original array and only one rotation needed for 8 rotation
+    //N rotation it will return to being its original array and only one rotation needed for 8 rotation
     //this of right rotate
     public static void rotate(int[] nums, int k) {
         k = k % nums.length;

@@ -5,29 +5,71 @@ public class Quest3 {
         // Left shift 1 by i positions and AND with the number
         return (number & (1 << i)) != 0;
     }
+    /*
+    // Dry Run Example: number = 13 (binary: 1101), i = 2
+    1 << 2 = 0100 (binary)
+    1101 &
+    0100
+    = 0100
+    Result: true
+     */
     public static boolean isBitSetRight(int number, int i) {
         // Right shift number by i positions and AND with 1
         return ((number >> i) & 1) == 1;
     }
+    /*
+    // Dry Run Example: number = 13 (binary: 1101),
+     i = 2 1101 >> 2 = 0011 (binary)
+       0011
+     & 0001
+     = 0001
+      Result: true
+     */
     public static int setBit(int number, int i) {
         // Create a bitmask by shifting 1 left by i positions and OR with the number
         return number | (1 << i);
     }
+    /*
+    number = 13 (binary: 1101),
+     i = 1 1 << 1 = 0010 (binary)
+     1101 | 0010 = 1111
+    Result: 15 (binary: 1111)
+     */
     public static int clearBit(int number, int i) {
         // Create a bitmask by shifting 1 left by i positions and then inverting the bits
         int mask = ~(1 << i);
         // Use the bitwise AND operator with the mask to clear the ith bit
         return number & mask;
     }
+    /*
+    number = 13 (binary: 1101),
+     i = 0 1 << 0 = 0001 (binary)
+     ~0001 = 1110 (binary)
+      1101 & 1110 = 1100
+      Result: 12 (binary: 1100)
+     */
     public static int toggleBit(int number, int i) {
         // XOR the number with a bitmask where only the ith bit is set
         return number ^ (1 << i);
     }
+    /*
+    // Dry Run Example:
+    number = 13 (binary: 1101),
+     i = 2 1 << 2 = 0100 (binary)
+      1101 ^ 0100 = 1001
+      Result: 9 (binary: 1001)
+     */
     public static int removeLastSetBit(int number) {
         // Subtracting 1 from the number flips all the bits after the rightmost set bit
         // AND-ing with the original number will clear the rightmost set bit
         return number & (number - 1);
     }
+    /*
+    number = 13 (binary: 1101)
+    13 - 1 = 12 (binary: 1100)
+    1101 & 1100 = 1100
+    Result: 12 (binary: 1100)
+     */
     public static boolean isPowerOfTwo(int number) {
         if (number <= 0) {
             return false;
@@ -35,6 +77,12 @@ public class Quest3 {
         // A number is a power of two if and only if it has exactly one bit set in its binary representation
         return (number & (number - 1)) == 0;
     }
+    /*
+    number = 13 (binary: 1101)
+    13 - 1 = 12 (binary: 1100)
+    1101 & 1100 = 1100
+    Result: false
+     */
     public static int countSetBits1(int n) {
         int count = 0;
 
@@ -58,11 +106,24 @@ public class Quest3 {
 
         return cnt;
     }
+    /*
+    n = 13 (binary: 1101)
+    cnt = 0
+    Step 1: n & (n - 1) -> 1101 & 1100 = 1100, cnt = 1
+    Step 2: n & (n - 1) -> 1100 & 1011 = 1000, cnt = 2
+    Step 3: n & (n - 1) -> 1000 & 0111 = 0000, cnt = 3
+    Result: cnt = 3
+     */
     public static boolean isOdd(int number) {
         // Use the bitwise AND operator to check if the least significant bit is 1
         return (number & 1) == 1;
     }
-
+/*
+// Dry Run Example:
+number = 13 (binary: 1101)
+1101 & 0001 = 0001
+Result: true
+ */
     public static void main(String[] args) {
         int number = 10; // Example number
         int bitPosition = 3; // Example bit position (0-based index)

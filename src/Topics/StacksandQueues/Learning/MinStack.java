@@ -42,6 +42,8 @@ class MinStack {
         return minStack.peek();
     }
     public static void main(String[] args) {
+        System.out.println("2303031300052");
+
         MinStack minStack = new MinStack();
         minStack.push(5);
         minStack.push(3);

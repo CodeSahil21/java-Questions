@@ -1,6 +1,6 @@
 package Topics.LinkedList.LL;
 import java.util.*;
-public class LL {
+public class  LL {
     private Node head;
     public LL() {}
     public void insertFirst(int val) {
@@ -144,8 +144,8 @@ public class LL {
         Node twoHead = new Node(-1);
 
         Node zero = zeroHead;
-        Node one = oneHead;
-        Node two = twoHead;
+        Node one =  oneHead;
+        Node two =  twoHead;
         Node temp = head;
         while (temp != null) {
             if (temp.value == 0) {
@@ -186,7 +186,7 @@ public class LL {
     //https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
     public Node removeNthFromEnd(int k){
         Node fast  = head;
-        Node slow = head;
+        Node slow =  head;
         for (int i = 0; i < k; i++) {
             if(fast == null){
                 return  head;

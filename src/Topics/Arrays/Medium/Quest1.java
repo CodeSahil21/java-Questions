@@ -38,7 +38,7 @@ public class Quest1 {
 
         reverse(nums,index+1, nums.length-1);//o(n)
     }
-//time complexity o(3(n)
+//time complexity o(3(n))
       static void reverse(int[] arr, int start,int end){
         while(start < end){
            int temp = arr[start];

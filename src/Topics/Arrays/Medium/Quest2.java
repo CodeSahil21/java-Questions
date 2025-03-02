@@ -3,7 +3,7 @@ package Topics.Arrays.Medium;
 public class Quest2 {
     public static void main(String[] args) {
         int[] arr = {7,1,5,3,6,4};
-           int result = maxProfit(arr);
+        int result = maxProfit(arr);
         System.out.println(result);
     }
     //time complexity o(n) and space o(1)

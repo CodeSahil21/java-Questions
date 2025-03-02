@@ -4,7 +4,7 @@ public class Quest7 {
     public static void main(String[] args) {
       int[] arr = {};
       int result = maxProduct(arr);
-        System.out.println(result);
+      System.out.println(result);
     }
 ///code with o(n^2) complexity
 //    public static  int maxProduct(int[] nums) {

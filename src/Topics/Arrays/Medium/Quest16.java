@@ -1,8 +1,6 @@
 package Topics.Arrays.Medium;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 //https://leetcode.com/problems/longest-consecutive-sequence/editorial/
 //longest-consecutive-sequence
