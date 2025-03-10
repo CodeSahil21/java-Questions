@@ -38,7 +38,7 @@ public class Quest10 {
             int element = nums[i];
             int moreneeded = target - element;
             if(map.containsKey(moreneeded)){
-                return new int[] {map.get(moreneeded),i};
+                return new int[]{map.get(moreneeded),i};
             }
             map.put(element,i);
         }

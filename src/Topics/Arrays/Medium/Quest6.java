@@ -12,9 +12,9 @@ public class Quest6 {
     }
 
     public static int[] productExceptSelf(int[] nums) {
-        //create two auxilary array
-        int[] left = new int[nums.length];
-        int[]  right  = new int[nums.length];
+        //create two auxiliary array
+        int[] left   = new int[nums.length];
+        int[] right  = new int[nums.length];
 
         //store left multiplication
         left[0] = 1;//we assign left[0] one because there is no number on left of  left[0]

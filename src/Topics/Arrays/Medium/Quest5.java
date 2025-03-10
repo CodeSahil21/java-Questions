@@ -7,7 +7,7 @@ public class Quest5 {
         System.out.println("Trapped water: " + trap(height));
     }
     public  static int  trap(int[] height) {
-        //step1 creating two auxilary array
+        //step1 creating two auxiliary array
         int[] right = new int[height.length];//time:o(n) space:o(n)
         int[] left = new int[height.length];//time:o(n) space:o(n)
 
