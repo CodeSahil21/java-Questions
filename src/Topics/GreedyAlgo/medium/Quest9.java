@@ -6,6 +6,6 @@ public class Quest9 {
     }
 
     public static int candy(int[] ratings) {
-
+    return -1;
     }
 }

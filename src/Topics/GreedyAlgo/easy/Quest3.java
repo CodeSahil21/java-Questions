@@ -8,7 +8,7 @@ public class Quest3 {
         System.out.println(checkValidString("())"));  // false
     }
     public  static boolean checkValidString(String s) {
-        public static boolean checkValidString(String s) {
+
             int minOpen = 0, maxOpen = 0;
 
             for (char ch : s.toCharArray()) {
@@ -32,4 +32,3 @@ public class Quest3 {
     }
 
 
-}
