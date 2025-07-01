@@ -45,10 +45,6 @@ Fill the left Array:
 Traverse the array from left to right.
 For each element, store the maximum height encountered so far.
 
-Fill the right Array:
-Traverse the array from right to left.
-For each element, store the maximum height encountered so far
-
 2)Calculation of Trapped Water
 For each index, calculate the amount of water trapped using the formula:
 

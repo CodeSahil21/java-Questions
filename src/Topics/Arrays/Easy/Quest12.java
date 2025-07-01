@@ -18,7 +18,7 @@ public class Quest12 {
                 int n = arr1.length;
                 int m = arr2.length;
             int i = 0, j = 0; // pointers
-            ArrayList<Integer > Union=new ArrayList<>(); // Uninon vector
+            ArrayList<Integer > Union=new ArrayList<>(); // Union vector
             while (i < n && j < m) {
                 if (arr1[i] <= arr2[j]) // Case 1 and 2
                 {

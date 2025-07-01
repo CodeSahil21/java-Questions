@@ -9,7 +9,7 @@ public class Quest9 {
     int[] arr = {0,0,1,1,1,2,2,3,3,4};
     int result = removeDuplicates(arr);
         System.out.println(Arrays.toString(arr));
-    System.out.println(result);
+        System.out.println(result);
 
     }
 

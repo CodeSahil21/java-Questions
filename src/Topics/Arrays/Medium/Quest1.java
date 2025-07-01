@@ -5,16 +5,15 @@ import java.util.Arrays;
 public class Quest1 {
     public static void main(String[] args) {
         int[] arr = {3,2,1};
-          nextPermutation(arr);
+        nextPermutation(arr);
         System.out.println(Arrays.toString(arr));
-
     }
     public static void nextPermutation(int[] nums) {
         int index = -1;
        /*
        If we start at nums.length - 1, there would be no nums[i + 1] to compare to,
         as nums[i + 1] would be out of bounds of the array.
-        *///{2,1,5,4,3,0,0}
+       *///{2,1,5,4,3,0,0}
         for(int i = nums.length-2;i>= 0;i--){//o(n)
             if(nums[i] < nums[i+1]){
                 index = i;
