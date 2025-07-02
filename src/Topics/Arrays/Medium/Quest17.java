@@ -51,7 +51,7 @@ public class Quest17 {
       // Mark the i-th row
       matrix[i][0] = 0;
       // Mark the j-th column i
-      f (j != 0){
+      if (j != 0){
        matrix[0][j] = 0;
         }else{
          col0 = 0;
@@ -64,6 +64,7 @@ public class Quest17 {
           for (int j = 1; j < m; j++) {
           if (matrix[i][j] != 0) {
           // Check for col & row
+
            if (matrix[i][0] == 0 || matrix[0][j] == 0) {
             matrix[i][j] = 0;
              }
