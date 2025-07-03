@@ -4,7 +4,8 @@ import java.util.*;
 //subarray-sum-equals-k
 public class Quest20 {
     public static void main(String[] args) {
-
+      int[] arr = {3, 4, 7, -2, 2, 1, 4, 2};
+      int   k = 7;
     }
     public static int subarraySum(int[] arr, int k) {
         int n = arr.length;
