@@ -25,7 +25,7 @@ public class Quest3 {
         if(arr.length == 0){
             return -1;
         }
-       int maxCurrent = arr[0];
+        int maxCurrent = arr[0];
         int  maxGlobal = arr[0];
         for (int i = 1; i < arr.length ; i++) {
             maxCurrent = Math.max(arr[i],maxCurrent+ arr[i]);

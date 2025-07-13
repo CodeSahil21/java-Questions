@@ -1,6 +1,6 @@
 package Topics.BinarySearch.answers;
 //https://leetcode.com/problems/median-of-two-sorted-arrays/description/
-public class Quest13 {
+public class  Quest13 {
 
     public static double findMedianSortedArrays(int[] a, int[] b) {
         int n1 = a.length, n2 = b.length;

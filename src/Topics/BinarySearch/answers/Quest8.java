@@ -33,7 +33,7 @@ public class Quest8 {
             int mid = (start+end)/2;
             if(cowsPossible(arr,mid,k)){
                 ans = mid;
-            start = mid+1;
+                start = mid+1;
             }else{
                 end = mid-1;
             }

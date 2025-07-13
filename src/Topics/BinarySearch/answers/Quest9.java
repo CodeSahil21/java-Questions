@@ -2,33 +2,38 @@ package Topics.BinarySearch.answers;
 import java.util.*;
 //https://www.naukri.com/code360/problems/allocate-books_1090540?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries
 public class Quest9 {
-    public static int countStudents(ArrayList<Integer> arr, int pages) {
-        int n = arr.size(); // size of array
+    public static int countStudents(int[] arr, int pages) {
+        int n = arr.length;
         int students = 1;
         long pagesStudent = 0;
+
         for (int i = 0; i < n; i++) {
-            if (pagesStudent + arr.get(i) <= pages) {
-                // add pages to current student
-                pagesStudent += arr.get(i);
+            if (pagesStudent + arr[i] <= pages) {
+                pagesStudent += arr[i];
             } else {
-                // add pages to next student
                 students++;
-                pagesStudent = arr.get(i);
+                pagesStudent = arr[i];
             }
         }
         return students;
     }
 
-    public static int findPages(ArrayList<Integer> arr, int n, int m) {
-        // book allocation impossible
+    public static int findPages(int[] arr, int n, int m) {
         if (m > n)
             return -1;
 
-        int low = Collections.max(arr);
-        int high = arr.stream().mapToInt(Integer::intValue).sum();
+        int low = Integer.MIN_VALUE;
+        int high = 0;
+
+        for (int i = 0; i < n; i++) {
+            low = Math.max(low, arr[i]);
+            high += arr[i];
+        }
+
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
             int students = countStudents(arr, mid);
+
             if (students > m) {
                 low = mid + 1;
             } else {
@@ -39,10 +44,11 @@ public class Quest9 {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(25, 46, 28, 49, 24));
-        int n = 5;
+        int[] arr = {25, 46, 28, 49, 24};
+        int n = arr.length;
         int m = 4;
         int ans = findPages(arr, n, m);
         System.out.println("The answer is: " + ans);
     }
+
 }
