@@ -18,5 +18,4 @@ public class Quest4 {
          }
          return false;
      }
-
 }

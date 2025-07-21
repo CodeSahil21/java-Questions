@@ -5,7 +5,7 @@ public class Quest4 {
 }
 class LRUCache {
     Node head = new Node(0, 0), tail = new Node(0, 0);
-    Map < Integer, Node > map = new HashMap();
+    Map < Integer, Node > map = new HashMap<>();
     int capacity;
 
     public LRUCache(int _capacity) {

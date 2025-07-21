@@ -29,3 +29,39 @@ public class Quest2 {
         return nge;
     }
 }
+/*
+    public  int[] nextGreaterElements(int[] nums1) {
+         int n = nums1.length;
+        int[] nge = new int[n];
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 2 * n - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && stack.peek() <= nums1[i % n]) {
+                stack.pop();
+            }
+            if (i < n) {
+                if (stack.isEmpty()) {
+                    nge[i] = -1;
+                } else {
+                    nge[i] = stack.peek();
+                }
+            }
+            stack.push(nums1[i % n]);
+        }
+        return nge;
+    }
+    public List<Integer> nearestSmallerToLeft(int[] arr) {
+    Stack<Integer> stack = new Stack<>();
+    List<Integer> result = new ArrayList<>();
+
+    for (int num : arr) {
+        while (!stack.isEmpty() && stack.peek() >= num) {
+            stack.pop();
+        }
+        result.add(stack.isEmpty() ? -1 : stack.peek());
+        stack.push(num);
+    }
+    return result;
+}
+
+ */
