@@ -5,7 +5,24 @@ public class Quest5 {
 
     }
 
+    public static int countSubstrings(String s) {
+        int count = 0;
+        int n = s.length();
+        int left = 0;
+        int[] freq = new int[3]; // index 0 → 'a', 1 → 'b', 2 → 'c'
 
+        for (int right = 0; right < n; right++) {
+            freq[s.charAt(right) - 'a']++;
+
+            while (freq[0] > 0 && freq[1] > 0 && freq[2] > 0) {
+                count += (n - right); // all substrings from left to end are valid
+                freq[s.charAt(left) - 'a']--;
+                left++;
+            }
+        }
+
+        return count;
+    }
     public static  int numberOfSubstrings(String s) {
       int[] lastSeen = {-1,-1,-1};
       int count = 0;
