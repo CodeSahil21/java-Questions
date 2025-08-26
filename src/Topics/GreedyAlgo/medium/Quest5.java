@@ -2,7 +2,7 @@ package Topics.GreedyAlgo.medium;
 import java.util.*;
 //https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1
 public class Quest5 {
-    static void maxMeetings(int start[], int end[], int n) {
+    static void maxMeetings(int[] start, int[] end, int n) {
         ArrayList<meeting> meet = new ArrayList<>();
 
         for(int i = 0; i < start.length; i++)

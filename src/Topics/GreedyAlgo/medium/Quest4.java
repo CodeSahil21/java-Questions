@@ -47,7 +47,7 @@ class solve {
             }
         }
 
-        int result[] = new int[maxi + 1];
+        int[] result = new int[maxi + 1];
 
         for (int i = 1; i <= maxi; i++) {
             result[i] = -1;
@@ -69,7 +69,7 @@ class solve {
             }
         }
 
-        int ans[] = new int[2];
+        int[] ans = new int[2];
         ans[0] = countJobs;
         ans[1] = jobProfit;
         return ans;

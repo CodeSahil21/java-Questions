@@ -23,7 +23,7 @@ public class Quest1 {
         }
         return res;
     }
- //pascal triangle variation generating col of pascal triangle
+ //pascal triangle variation generating row of pascal triangle
  static void pascalTriangle(int n){
      long ans = 1;
      System.out.print(ans + " "); // printing 1st element

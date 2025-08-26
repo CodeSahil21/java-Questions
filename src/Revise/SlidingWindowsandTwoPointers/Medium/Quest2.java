@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Quest2 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String str = "takeUforward";
         System.out.println("The length of the longest substring without repeating characters is " + lengthOfLongestSubstring(str));
     }

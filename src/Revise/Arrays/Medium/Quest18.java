@@ -21,7 +21,7 @@ public class Quest18 {
             for (int j = i+1; j < matrix[0].length ; j++) {
                 int temp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
-                matrix[j][i] = temp;
+                  matrix[j][i] = temp;
             }
         }
         //reverse each row

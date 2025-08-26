@@ -40,9 +40,9 @@ public class Quest8 {
             maxA = Math.max(maxA, heights[i] * (rightSmall[i] - leftSmall[i] + 1));
         }
         return maxA;
-
     }
-    static int largestRectangleArea(int histo[]) {
+
+    static int largestRectangleArea(int[] histo) {
         Stack< Integer > st = new Stack < > ();
         int maxA = 0;
         int n = histo.length;

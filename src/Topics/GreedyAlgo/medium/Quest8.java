@@ -2,7 +2,7 @@ package Topics.GreedyAlgo.medium;
 import java.util.*;
 //https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1
 public class Quest8 {
-    static int countPlatforms(int n,int arr[],int dep[])
+    static int countPlatforms(int n, int[] arr, int[] dep)
     {
         int ans=1; //final value
         for(int i=0;i<=n-1;i++)
@@ -21,7 +21,7 @@ public class Quest8 {
         return ans;
     }
 
-    static int findPlatform2(int arr[], int dep[], int n)
+    static int findPlatform2(int[] arr, int[] dep, int n)
     {
         Arrays.sort(arr);
         Arrays.sort(dep);

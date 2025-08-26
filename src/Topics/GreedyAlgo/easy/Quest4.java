@@ -2,7 +2,7 @@ package Topics.GreedyAlgo.easy;
 import java.util.*;
 //https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1
 public class Quest4 {
-    static double fractionalKnapsack(int W, Item arr[], int n) {
+    static double fractionalKnapsack(int W, Item[] arr, int n) {
         Arrays.sort(arr, new itemComparator());
 
         int curWeight = 0;
@@ -28,7 +28,7 @@ public class Quest4 {
     public static void main(String args[])
     {
         int n = 3, weight = 50;
-        Item arr[] = {new Item (100,20),new Item(60,10),new Item(120,30)};
+        Item[] arr = {new Item (100,20),new Item(60,10),new Item(120,30)};
         double ans = fractionalKnapsack(weight, arr, n);
         System.out.println("The maximum value is "+ans);
     }

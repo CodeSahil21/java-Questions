@@ -237,6 +237,7 @@ public class  LL {
         if(head == null || head.next == null){
             return  true;
         }
+
         Node slow = head;
         Node fast = head;
         while(fast.next != null && fast.next.next != null){

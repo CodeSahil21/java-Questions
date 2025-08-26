@@ -10,7 +10,7 @@ public class Quest8 {
         if(pivot == -1){
             return binarySearch(nums,target,0,nums.length-1);
         }
-        //if pivot element is target
+        //if pivot element is targeted
         if(nums[pivot] == target){
             return pivot;
         }

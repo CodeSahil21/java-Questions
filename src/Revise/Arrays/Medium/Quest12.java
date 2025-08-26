@@ -21,7 +21,6 @@ public class Quest12 {
             }else if(arr[i] != element){
                 count--;
             }
-
         }
         int c2 = 0;
         for(int i = 0 ; i < arr.length;i++){

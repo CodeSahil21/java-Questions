@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Quest1 {
     public static void main(String[] args) {
-        int[] arr = {3,2,1};
+        int[] arr = {3,5,2,1,4};
         nextPermutation(arr);
         System.out.println(Arrays.toString(arr));
     }
