@@ -61,7 +61,9 @@ public class Quest9 {
 
             // Check if we have reached the destination cell,
             // return the current value of difference (which will be min).
-            if(row == n-1 && col == m-1) return diff;
+            if(row == n-1 && col == m-1) {
+                return diff;
+            }
             // row - 1, col
             // row, col + 1
             // row - 1, col

@@ -29,7 +29,7 @@ public class Quest3 {
         Queue<Pair2> q = new LinkedList<>();
 
         // BFS traversal with pushing values in queue
-        // when after a transformation, a word is found in wordList.
+        // when after a transformation, a word is found in wordL  ist.
         q.add(new Pair2(startWord, 1));
 
         // Push all values of wordList into a set

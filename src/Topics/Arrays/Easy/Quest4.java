@@ -12,7 +12,7 @@ public class Quest4 {
     public static boolean containsDuplicate(int[] nums) {
         //for this problem we sort the array
         Arrays.sort(nums);
-//we check if nums[i] == nums[i-1] return rue if it's there
+//we check if nums[i] == nums[i-1] return true if it's there
         for (int i = 1; i < nums.length; i++) {
             //1,1,2,3
             if(nums[i]==nums[i-1]){

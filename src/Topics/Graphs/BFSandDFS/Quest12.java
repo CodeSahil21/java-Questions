@@ -49,8 +49,8 @@ public class Quest12 {
 
     // Function to detect cycle in a directed graph.
     public static boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj) {
-        int vis[] = new int[V];
-        int pathVis[] = new int[V];
+        int[] vis = new int[V];
+        int[] pathVis = new int[V];
 
         for(int i = 0;i<V;i++) {
             if(vis[i] == 0) {

@@ -19,9 +19,21 @@ class Tuple2 {
 }
 public class Quest10 {
     public static void main(String[] args) {
+        int n = 4;
+        int[][] flights = {
+                {0, 1, 100},
+                {1, 2, 100},
+                {2, 3, 100},
+                {0, 2, 500}
+        };
+        int src = 0;
+        int dst = 3;
+        int k = 1;
 
+        int result = findCheapestPrice(n, flights, src, dst, k);
+        System.out.println("Cheapest price from " + src + " to " + dst + " with at most " + k + " stops: " + result);
     }
-    public static int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        public static int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
 
         // Create the adjacency list to depict airports and flights in
         // the form of a graph.

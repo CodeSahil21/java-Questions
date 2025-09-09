@@ -1264,4 +1264,18 @@ public class BinaryTree {
 
         }
     }
+    public void flatten2(Node root) {
+        flattenHelper(root, new Node[]{null});
+    }
+
+    private void flattenHelper(Node node, Node[] prevRef) {
+        if (node == null) return;
+
+        flattenHelper(node.right, prevRef);
+        flattenHelper(node.left, prevRef);
+
+        node.right = prevRef[0];
+        node.left = null;
+        prevRef[0] = node;
+    }
 }

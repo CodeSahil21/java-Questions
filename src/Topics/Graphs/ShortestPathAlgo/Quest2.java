@@ -41,7 +41,7 @@ public class Quest2 {
         }
         //A dist array of size N initialised with a large number to
         //indicate that initially all the nodes are untraversed.
-        int dist[] = new int[n];
+        int[] dist = new int[n];
         Arrays.fill(dist, (int) 1e9);
         dist[src] = 0;
 
