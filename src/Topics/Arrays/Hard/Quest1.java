@@ -4,7 +4,8 @@ package Topics.Arrays.Hard;
 import java.util.*;
 public class Quest1 {
     public static void main(String[] args) {
-
+        List<List<Integer>> ans = generate(5);
+        System.out.println(ans);
     }
  //variation 3: generate entire pascal triangle
     public static  List<List<Integer>> generate(int numRows) {

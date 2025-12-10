@@ -35,3 +35,24 @@ public class Quest5 {
         return count;
     }
 }
+/*
+public static int countSubstringsBrute(String s) {
+    int N = s.length();
+    int totalCount = 0;
+
+    for (int i = 0; i < N; i++) { // Start index
+        int[] freq = new int[3]; // Reset frequency for each starting position
+        for (int j = i; j < N; j++) { // End index
+
+            // Track frequency
+            freq[s.charAt(j) - 'a']++;
+
+            // Check if all three are present
+            if (freq[0] > 0 && freq[1] > 0 && freq[2] > 0) {
+                totalCount++;
+            }
+        }
+    }
+    return totalCount;
+}
+ */

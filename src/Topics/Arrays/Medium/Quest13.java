@@ -9,9 +9,9 @@ public class Quest13 {
     public static int maxSubArray(int[] arr) {
         int maxi = Integer.MIN_VALUE; // maximum sum
         int sum = 0;
-    int start = 0;
-    int ansStart = -1;
-    int ansEnd = -1;
+        int start = 0;
+        int ansStart = -1;
+        int ansEnd = -1;
         for (int i = 0; i < arr.length; i++) {
                if(sum == 0){
                     start = i;

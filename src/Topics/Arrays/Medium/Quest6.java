@@ -41,3 +41,24 @@ left  =  1    2    2   6
 right =  12   12   4   1
 ans   =   12   24   8  6
  */
+/*
+public static int[] productExceptSelf(int[] nums) {
+    int[] ans = new int[nums.length];
+
+    // Step 1: Build left product directly into ans[]
+    ans[0] = 1;
+    for (int i = 1; i < nums.length; i++) {
+        ans[i] = ans[i - 1] * nums[i - 1];
+    }
+
+    // Step 2: Traverse from right, multiply with running product
+    int R = 1;
+    for (int i = nums.length - 1; i >= 0; i--) {
+        ans[i] = ans[i] * R;
+        R = R * nums[i];
+    }
+
+    return ans;
+}
+
+ */

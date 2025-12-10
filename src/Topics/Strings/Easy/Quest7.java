@@ -10,7 +10,8 @@ public class Quest7 {
     public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
-        }             s = s.toLowerCase();
+        }
+             s = s.toLowerCase();
              t = t.toLowerCase();
              s=s.replace(" ","");
              t=t.replace(" ","");

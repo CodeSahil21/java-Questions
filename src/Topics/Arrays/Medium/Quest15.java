@@ -3,7 +3,7 @@ package Topics.Arrays.Medium;
 import java.util.ArrayList;
 
 public class Quest15 {
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         int[] arr=  {10, 22, 12, 3, 0, 6};
         ArrayList<Integer> ans= printLeaders(arr);

@@ -68,5 +68,27 @@ public class Quest4 {
         System.out.println(fruitInBasket2(arr, k)); // Output: 4
     }
 }
+/*
+public static int fruitInBasketBrute(int[] arr, int k) {
+    int N = arr.length;
+    int maxLen = 0;
 
+    for (int i = 0; i < N; i++) { // Start index
+        HashMap<Integer, Integer> distinctElements = new HashMap<>();
+        for (int j = i; j < N; j++) { // End index
 
+            // Track distinct elements in the current subarray arr[i...j]
+            distinctElements.put(arr[j], distinctElements.getOrDefault(arr[j], 0) + 1);
+
+            if (distinctElements.size() <= k) {
+                // If constraint met, update max length
+                maxLen = Math.max(maxLen, j - i + 1);
+            } else {
+                // Constraint violated, stop expanding this window
+                break;
+            }
+        }
+    }
+    return maxLen;
+}
+ */

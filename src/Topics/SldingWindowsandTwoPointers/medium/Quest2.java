@@ -25,3 +25,31 @@ public class Quest2 {
         return len;
     }
 }
+/*
+public static int lengthOfLongestSubstringBrute(String s) {
+    int N = s.length();
+    int maxLength = 0;
+
+    for (int i = 0; i < N; i++) { // Start index
+        for (int j = i; j < N; j++) { // End index
+            // Check uniqueness of s[i...j]
+            if (areCharactersUnique(s, i, j)) {
+                maxLength = Math.max(maxLength, j - i + 1);
+            }
+        }
+    }
+    return maxLength;
+}
+
+// Helper function: O(N) check
+private static boolean areCharactersUnique(String s, int start, int end) {
+    HashSet<Character> set = new HashSet<>();
+    for (int i = start; i <= end; i++) {
+        if (set.contains(s.charAt(i))) {
+            return false;
+        }
+        set.add(s.charAt(i));
+    }
+    return true;
+}
+ */

@@ -5,7 +5,6 @@ public class Quest15 {
         int[] arr = {4, 1, 2, 1, 2};
         int ans = getSingleElement(arr);
         System.out.println("The single element is: " + ans);
-
     }
     public static int getSingleElement(int []arr) {
         //size of the array:

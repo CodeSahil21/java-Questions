@@ -11,9 +11,7 @@ public class Quest1 {
     static int max(int[] arr){
         int max = Integer.MIN_VALUE;
         for(int i = 0 ; i<arr.length;i++){
-            if(arr[i]>max){
-                max = arr[i];
-            }
+           max = Math.max(max,arr[i]);
         }
         return max;
     }
@@ -21,9 +19,7 @@ public class Quest1 {
     static int min(int[] arr){
         int min = Integer.MAX_VALUE;
         for(int i = 0 ; i<arr.length;i++){
-            if(arr[i]<min){
-                min = arr[i];
-            }
+          min = Math.min(min,arr[i]);
         }
         return min;
     }

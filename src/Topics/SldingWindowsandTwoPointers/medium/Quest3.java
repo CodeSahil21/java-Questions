@@ -29,3 +29,26 @@ public class Quest3 {
         return maxLen;
     }
 }
+/*
+public static int longestOnesBrute(int[] nums, int k) {
+    int N = nums.length;
+    int maxLen = 0;
+
+    for (int i = 0; i < N; i++) { // Start index
+        int zeros = 0;
+        for (int j = i; j < N; j++) { // End index
+            if (nums[j] == 0) {
+                zeros++;
+            }
+            // Check the constraint for the current window [i...j]
+            if (zeros <= k) {
+                maxLen = Math.max(maxLen, j - i + 1);
+            } else {
+                // No need to continue expanding this window, as adding more elements will only increase zeros
+                break;
+            }
+        }
+    }
+    return maxLen;
+}
+ */

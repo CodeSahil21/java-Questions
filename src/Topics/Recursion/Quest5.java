@@ -49,12 +49,12 @@ public class Quest5 {
 
         ds.add(arr[ind]);
         sum += arr[ind];
-        if(subSequencesWithSumk2(ind+1,ds,sum,target,arr) == true){
+        if(subSequencesWithSumk2(ind + 1, ds, sum, target, arr)){
             return true;
         }
         sum -= arr[ind];
         ds.remove(ds.size()-1);
-        if(subSequencesWithSumk2(ind+1,ds,sum,target,arr)== true){
+        if(subSequencesWithSumk2(ind + 1, ds, sum, target, arr)){
             return true;
         }
         return false;

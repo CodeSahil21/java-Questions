@@ -36,6 +36,20 @@ public static int missingNumber(int []a, int N) {
 
         return (xor1 ^ xor2); // the missing number
     }
+public static int missingNumber(int[] a) {
+    int inferredN = a.length + 1;
+
+    int xor1 = 0, xor2 = 0;
+
+    for (int i = 0; i < a.length; i++) {
+        xor2 ^= a[i];         // XOR of array elements
+        xor1 ^= (i + 1);      // XOR of 1 to N-1
+    }
+
+    xor1 ^= inferredN;        // Add N to complete the full range
+
+    return xor1 ^ xor2;       // Missing number
+}
 
  */
     static void swap(int[] arr, int first, int second){
