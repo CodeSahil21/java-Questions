@@ -1,5 +1,6 @@
 package Revise;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,5 +14,21 @@ public class Hash {
         }
         int a = mpp.get(2);
         System.out.println(a);
+    }
+    static int quest(int[] arr,int m){
+        int largest = Integer.MIN_VALUE;
+        int secLargest = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+             if(arr[i] > largest){
+                 secLargest = largest;
+                 largest = arr[i];
+             }else if(arr[i] > secLargest && arr[i] != largest){
+                 secLargest = arr[i];
+             }
+        }
+        if(secLargest == Integer.MIN_VALUE){
+            return -1;
+        }
+        return secLargest;
     }
 }

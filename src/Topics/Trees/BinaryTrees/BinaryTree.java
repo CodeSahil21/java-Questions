@@ -133,7 +133,7 @@ public class BinaryTree {
         while (!queue.isEmpty()) {
             int levelSize = queue.size();
             List<Integer> currentLevel = new ArrayList<>(levelSize);
-            for (int i = 0; i < levelSize; i++) {
+            for (int i = 0; i <  levelSize; i++) {
                 Node currentNode = queue.poll();
                 currentLevel.add(currentNode.value);
                 if (currentNode.left != null) {

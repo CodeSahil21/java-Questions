@@ -1,7 +1,7 @@
 package Topics.StacksandQueues.Quest;
 import java.util.*;
 public class Quest11 {
-    public static int[] count_NGEs(int arr[], int n, int queries[], int q) {
+    public static int[] count_NGEs(int[] arr, int n, int[] queries, int q) {
         int[] nextGreater = new int[n];
         Stack<Integer> stack = new Stack<>();
 

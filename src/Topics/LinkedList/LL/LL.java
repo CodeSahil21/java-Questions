@@ -13,7 +13,7 @@ public class  LL {
         Node node = new Node(val);
         if (head == null) {
             insertFirst(val);
-            return;
+             return;
         }
         Node temp = head;
         while (temp.next != null) {
@@ -204,6 +204,7 @@ public class  LL {
         slow.next = slow.next.next;
         return head;
     }
+
     //https://leetcode.com/problems/reverse-linked-list/description/
     public Node reverseList(){
         if(head == null || head.next == null){
@@ -260,10 +261,10 @@ public class  LL {
     }
 //https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=add-1-to-a-number-represented-as-linked-list
      public int addHelper(Node temp){
-            if(temp == null ) {
+        if(temp == null ) {
                 return 1;
-            }
-              int carry = addHelper(temp.next);
+        }
+          int carry = addHelper(temp.next);
          temp.value += carry;
          if(temp.value < 10){
           return 0;

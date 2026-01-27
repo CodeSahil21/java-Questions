@@ -25,36 +25,33 @@ public class Quest12 {
         else
             System.out.println("False");
     }
-    private static boolean dfsCheck(int node, ArrayList<ArrayList<Integer>> adj, int vis[], int pathVis[]) {
-        vis[node] = 1;
-        pathVis[node] = 1;
+    private static boolean dfsCheck(int node, ArrayList<ArrayList<Integer>> adj, int[] color,int col) {
+        color[node] = col;
 
         // traverse for adjacent nodes
         for(int it : adj.get(node)) {
             // when the node is not visited
-            if(vis[it] == 0) {
-                if(dfsCheck(it, adj, vis, pathVis))
-                    return true;
+            if(color[it] == -1) {
+                if(dfsCheck(it, adj, color,1 - col))
+                    return false;
             }
             // if the node has been previously visited
             // but it has to be visited on the same path
-            else if(pathVis[it] == 1) {
-                return true;
+            else if(color[it] == col) {
+                return false;
             }
         }
 
-        pathVis[node] = 0;
-        return false;
+        return true;
     }
 
     // Function to detect cycle in a directed graph.
     public static boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj) {
-        int[] vis = new int[V];
-        int[] pathVis = new int[V];
-
+        int[] color = new int[V];
+        Arrays.fill(color,-1);
         for(int i = 0;i<V;i++) {
-            if(vis[i] == 0) {
-                if(dfsCheck(i, adj, vis, pathVis)) return true;
+            if(color[i] == 0) {
+                if(dfsCheck(i, adj,color,1)) return true;
             }
         }
         return false;
