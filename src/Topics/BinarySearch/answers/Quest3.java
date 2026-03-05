@@ -23,7 +23,7 @@ public class Quest3 {
         }
         return totalhours;
     }
-    public static int minEatingSpeed(int[] piles, int h) {
+ public static int minEatingSpeed(int[] piles, int h) {
     int start = 1;
     int end = findmax(piles);
     int ans = Integer.MAX_VALUE;

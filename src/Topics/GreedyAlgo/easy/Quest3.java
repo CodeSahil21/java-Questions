@@ -26,7 +26,7 @@ public class Quest3 {
             }
 
             return minOpen == 0;
-        }
+    }
 
 
     }

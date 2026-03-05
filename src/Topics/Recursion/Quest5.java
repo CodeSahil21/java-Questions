@@ -5,9 +5,10 @@ public class Quest5 {
     public static void main(String[] args) {
         int[] arr = {1,2,1};
         List<Integer> ds = new ArrayList<>();
-//        subSequences(0,ds,arr);
-      int count = subSequencesWithSumk3(0,ds,0,2,arr);
-        System.out.println(count);
+      subSequences(0,ds,arr);
+        System.out.println(ds);
+//      int count = subSequencesWithSumk3(0,ds,0,2,arr);
+//        System.out.println(count);
     }
     static void subSequences(int ind,List<Integer> ds,int[] arr){
         if(ind == arr.length){

@@ -30,7 +30,6 @@ public class Quest10 {
             }
         }
         return false;
-
     }
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> map = new HashMap<>();

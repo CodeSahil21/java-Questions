@@ -60,7 +60,7 @@ public class Quest4 {
 /*//for large data
 
 public int sumSubarrayMins(int[] arr) {
-        int n = arr.length;
+    int n = arr.length;
     int[] nse = findNSE(arr);
     int[] pse = findPSE(arr);
     long total = 0;

@@ -10,7 +10,7 @@ public class Quest5 {
     }
     static int chocolateDistribution(int[] arr, int m){
         //first we look for edge ie array is empty or no childrens are greater than packet
-        if(arr.length==0 || m >arr.length) {
+        if(arr.length==0 || m >  arr.length) {
             return -1;
         }
         //to find subarray where The difference between the maximum and minimum number of chocolates in the packets given to the students is minimized

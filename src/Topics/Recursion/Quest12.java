@@ -2,10 +2,10 @@ package Topics.Recursion;
 import java.util.*;
 //https://leetcode.com/problems/n-queens/
 public class Quest12 {
-    public static List<List<String>> solveNQueens(int n) {
+//    public static List<List<String>> solveNQueens(int n) {
+//
+//    }
 
-    }
-/*
     // Function to check if placing a queen is safe
     public boolean isSafe(int row, int col, char[][] board, int n) {
         // Check left in the same row
@@ -28,8 +28,7 @@ public class Quest12 {
     }
 
     // Backtracking function to solve N-Queens
-    public void solve(int col, char[][] board,
-                      List<List<String>> ans, int n) {
+    public void solve(int col, char[][] board, List<List<String>> ans, int n) {
         // If all columns are filled, save the solution
         if (col == n) {
             List<String> temp = new ArrayList<>();
@@ -65,6 +64,7 @@ public class Quest12 {
 
         // Start backtracking from column 0
         solve(0, board, ans, n);
-       }
- */
+        return  ans;
+    }
+
 }

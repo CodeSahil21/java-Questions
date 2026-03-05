@@ -31,7 +31,5 @@ class StockSpanner {
         stack.push(new int[]{price, index});
         return span;
     }
-
-
 }
 
