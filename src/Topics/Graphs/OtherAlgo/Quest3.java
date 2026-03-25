@@ -28,9 +28,7 @@ public class Quest3 {
         System.out.println("");
     }
     private static int timer = 1;
-    private static void dfs(int node, int parent, int[] vis,
-                            int[] tin, int[] low, int[] mark,
-                            ArrayList<ArrayList<Integer>> adj) {
+    private static void dfs(int node, int parent, int[] vis, int[] tin, int[] low, int[] mark, ArrayList<ArrayList<Integer>> adj) {
         vis[node] = 1;
         tin[node] = low[node] = timer;
         timer++;
@@ -54,8 +52,7 @@ public class Quest3 {
         }
     }
     //Function to return Breadth First Traversal of given graph.
-    public static ArrayList<Integer> articulationPoints(int n,
-                                                 ArrayList<ArrayList<Integer>> adj) {
+    public static ArrayList<Integer> articulationPoints(int n, ArrayList<ArrayList<Integer>> adj) {
         int[] vis = new int[n];
         int[] tin = new int[n];
         int[] low = new int[n];

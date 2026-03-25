@@ -28,9 +28,7 @@ public class Quest2 {
         System.out.println("");
     }
     private  static int timer = 1;
-    private static void dfs(int node, int parent, int[] vis,
-                     ArrayList<ArrayList<Integer>> adj, int[] tin, int[] low,
-                     List<List<Integer>> bridges) {
+    private static void dfs(int node, int parent, int[] vis, ArrayList<ArrayList<Integer>> adj, int[] tin, int[] low, List<List<Integer>> bridges) {
         vis[node] = 1;
         tin[node] = low[node] = timer;
         timer++;

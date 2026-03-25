@@ -49,7 +49,7 @@ public class Quest2 {
              q.poll();
              for(int delrow = -1; delrow <= 1; delrow++)
                 for(int delcol = -1; delcol <= 1;delcol++){
-                    int nrow = ro+delrow;
+                    int nrow = ro + delrow;
                     int ncol = co + delcol ;
                     if(nrow >= 0 && nrow<n && ncol>=0 && ncol<m &&vis[nrow][ncol] == 0 && grid[nrow][ncol] == '1'){
                         vis[nrow][ncol] = 1;

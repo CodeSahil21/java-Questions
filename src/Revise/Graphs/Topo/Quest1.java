@@ -3,7 +3,7 @@ package Revise.Graphs.Topo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Quest1 {
+public class  Quest1 {
     public static void main(String[] args) {
         // Example adjacency matrix input
         int[][] matrix = {

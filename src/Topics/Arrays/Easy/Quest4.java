@@ -1,6 +1,6 @@
 package Topics.Arrays.Easy;
 
-import java.util.Arrays;
+import java.util.*;
 
 //
 //contain duplicate
@@ -20,5 +20,25 @@ public class Quest4 {
             }
         }
         return false;
+    }
+    public static boolean containsDuplicate1(int[] nums) {
+        HashSet<Integer> seen = new HashSet<>();
+        for (int num : nums) {
+            if (seen.contains(num)) {
+                return true; // duplicate found
+            }
+            seen.add(num);
+        }
+        return false; // no duplicates
+    }
+    public static boolean containsDuplicateBrute(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] == nums[j]) {
+                    return true; // duplicate found
+                }
+            }
+        }
+        return false; // no duplicates
     }
 }

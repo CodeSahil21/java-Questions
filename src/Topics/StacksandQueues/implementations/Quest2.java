@@ -19,10 +19,10 @@ public class Quest2 {
                 q.poll();
             }
             // remove smaller numbers in k range as they are useless
+
             while (!q.isEmpty() && a[q.peekLast()] < a[i]) {
                 q.pollLast();
             }
-
             q.offer(i);
             if (i >= k - 1) {
                 r[ri++] = a[q.peek()];

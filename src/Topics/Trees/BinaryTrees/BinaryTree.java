@@ -1074,12 +1074,10 @@ public class BinaryTree {
         int numsLeft = inRoot - inStart;
 
         // Recursively build the left subtree
-        root.left = buildTree(preorder, preStart + 1, preStart + numsLeft,
-                inorder, inStart, inRoot - 1, inMap);
+        root.left = buildTree(preorder, preStart + 1, preStart + numsLeft,inorder, inStart, inRoot - 1, inMap);
 
         // Recursively build the right subtree
-        root.right = buildTree(preorder, preStart + numsLeft + 1, preEnd,
-                inorder, inRoot + 1, inEnd, inMap);
+        root.right = buildTree(preorder, preStart + numsLeft + 1, preEnd, inorder, inRoot + 1, inEnd, inMap);
 
         // Return the current root node
         return root;
