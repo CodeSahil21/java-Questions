@@ -50,5 +50,39 @@ public class Quest9 {
 //        }
 //        return  -1;
 //    }
+
+
+    static boolean findPair(int arr[], int n, int target) {
+        // 1. Find the pivot point (the largest element)
+        int pivot = 0;
+        for (int i = 0; i < n - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                pivot = i;
+                break;
+            }
+        }
+
+        // 2. Initialize pointers based on the pivot
+        // Smallest element is right after the largest (pivot)
+        int left = (pivot + 1) % n;
+        int right = pivot;
+
+        // 3. Meet-in-the-middle search using circular pointers
+        while (left != right) {
+            int currentSum = arr[left] + arr[right];
+
+            if (currentSum == target) {
+                return true;
+            }
+
+            // Adjust pointers circularly if sum doesn't match
+            if (currentSum < target) {
+                left = (left + 1) % n; // Move to next larger element
+            } else {
+                right = (n + right - 1) % n; // Move to next smaller element
+            }
+        }
+        return false;
+    }
 }
 

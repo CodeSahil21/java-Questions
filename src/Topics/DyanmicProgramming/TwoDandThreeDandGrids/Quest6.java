@@ -32,11 +32,11 @@ public class Quest6 {
         if(i == 0 ){
             return matrix[0][j];
         }
-        int left =  getMaxPathSumRecursion(matrix,i-1,j-1);
+        int leftD =  getMaxPathSumRecursion(matrix,i-1,j-1);
         int straight =  getMaxPathSumRecursion(matrix,i-1,j);
-        int right = getMaxPathSumRecursion(matrix,i-1,j+1);
+        int rightD = getMaxPathSumRecursion(matrix,i-1,j+1);
 
-        return matrix[i][j] +Math.max(left, Math.max(straight, right));
+        return matrix[i][j] + Math.max(leftD, Math.max(straight, rightD));
 
     }
     static int getMaxPathSumMemo(int[][] matrix){

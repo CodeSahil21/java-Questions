@@ -4,7 +4,8 @@ import java.util.*;
 
 //https://leetcode.com/problems/longest-consecutive-sequence/editorial/
 //longest-consecutive-sequence
-public class Quest16 {
+public class
+Quest16 {
     public static void main(String[] args) {
         int[] a = {100, 200, 1, 2, 3, 4};
         int ans = longestSuccessiveElements(a);

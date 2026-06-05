@@ -19,6 +19,7 @@ public class Quest5 {
         }
         return findWaysTab(arr,(totalSum-d)/2);
     }
+    //for 0'sin input array
     static int findWaysTab(int[] num, int tar){
         int n = num.length;
 

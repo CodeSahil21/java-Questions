@@ -8,7 +8,8 @@ public class Quest3 {
     /*
     // Dry Run Example: number = 13 (binary: 1101), i = 2
     1 << 2 = 0100 (binary)
-    1101 &
+    1101
+         &
     0100
     = 0100
     Result: true

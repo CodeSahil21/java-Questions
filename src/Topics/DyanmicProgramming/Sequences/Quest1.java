@@ -109,5 +109,27 @@ public class Quest1 {
         }
         return prev[k];
     }
+/*
+static boolean subsetSumToKMemo(int n, int k, int[] arr, boolean[][] dp, int ind){
+    if(k == 0){
+        return true;
+    }
+    if(ind == 0){
+        return arr[0] == k;
+    }
+    if(dp[ind][k]){
+        return dp[ind][k]; // already computed as true
+    }
 
+    boolean nottake = subsetSumToKMemo(n, k, arr, dp, ind-1);
+    boolean take = false;
+    if(k >= arr[ind]){
+        take = subsetSumToKMemo(n, k - arr[ind], arr, dp, ind-1);
+    }
+
+    dp[ind][k] = nottake || take;
+    return dp[ind][k];
+}
+
+ */
 }

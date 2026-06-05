@@ -1,6 +1,6 @@
 package Topics.BinarySearch.oneDarray;
 //https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
-public class Quest9 {
+public class   Quest9 {
     public static void main(String[] args) {
 
     }

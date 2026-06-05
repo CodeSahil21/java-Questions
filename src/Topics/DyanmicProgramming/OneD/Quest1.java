@@ -28,49 +28,52 @@ public class Quest1 {
             return 1;
         }
         if(n == 1){
-            return 0;
+            return 1;
         }
         int left =  climbStairs(n-1);
         int right = climbStairs(n-2);
 
         return left + right;
     }
-    public int climbStairs(int n, int[] memo) {
-        if (memo[n] != 0) {
-            return memo[n];
-        }
+    public static int climbStairsMemo(int n, int[] dp) {
+        if (n == 0) return 1;
+        if (n == 1) return 1;
 
-        if (n == 1) {
-            memo[n] = 1;
-            return 1;
-        }
-        if (n == 2) {
-            memo[n] = 2;
-            return 2;
-        }
+        if (dp[n] != -1) return dp[n]; // already computed
 
-        // Compute the result and store it
-        memo[n] = climbStairs(n - 1, memo) + climbStairs(n - 2, memo);
+        int left = climbStairsMemo(n - 1, dp);
+        int right = climbStairsMemo(n - 2, dp);
 
-        // Return the stored result
-        return memo[n];
+        return dp[n] = left + right;
     }
-    public int climbStairs2(int n) {
-        if (n <= 2) {
-            return n;
+    public static int climbStairsTab(int n) {
+        if (n == 0) return 1;
+        if (n == 1) return 1;
+
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+
+        for (int i = 2; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
         }
 
-        int prev1 = 2; // Ways to climb 2 stairs
-        int prev2 = 1; // Ways to climb 1 stair
-        int current = 0;
+        return dp[n];
+    }
+    public static int climbStairsOptimized(int n) {
+        if (n == 0) return 1;
+        if (n == 1) return 1;
 
-        for (int i = 3; i <= n; i++) {
-            current = prev1 + prev2;
+        int prev2 = 1; // f(0)
+        int prev1 = 1; // f(1)
+
+        for (int i = 2; i <= n; i++) {
+            int current = prev1 + prev2;
             prev2 = prev1;
             prev1 = current;
         }
 
-        return current;
+        return prev1;
     }
 }
 //try to represent the problem in terms of index

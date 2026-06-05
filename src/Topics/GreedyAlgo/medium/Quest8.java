@@ -34,9 +34,7 @@ public class Quest8 {
             if (arr[i] <= dep[j]) {
                 plat_needed++;
                 i++;
-            }
-
-            else if (arr[i] > dep[j]) {
+            }else if (arr[i] > dep[j]) {
                 plat_needed--;
                 j++;
             }

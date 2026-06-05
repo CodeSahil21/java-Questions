@@ -37,7 +37,7 @@ public class Quest3 {
             if (it == parent) continue;
             if (vis[it] == 0) {
                 dfs(it, node, vis, tin, low, mark, adj);
-                low[node] = Math.min(low[node], low[it]);
+                 low[node] = Math.min(low[node], low[it]);
                 // node --- it
                 if (low[it] >= tin[node] && parent != -1) {
                     mark[node] = 1;

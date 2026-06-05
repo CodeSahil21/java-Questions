@@ -57,3 +57,51 @@ public class Quest9 {
         System.out.println("Maximal Rectangle Area: " + maximalRectangle(matrix));
     }
 }
+/*
+import java.util.*;
+
+public class HistogramMaxArea {
+
+    public static int largestRectangleArea(int[] heights) {
+        int n = heights.length;
+
+        // Previous Smaller Element (PSE)
+        int[] pse = new int[n];
+        Stack<Integer> st1 = new Stack<>();
+        for (int i = 0; i < n; i++) {
+            while (!st1.isEmpty() && heights[st1.peek()] >= heights[i]) {
+                st1.pop();
+            }
+            pse[i] = st1.isEmpty() ? -1 : st1.peek();
+            st1.push(i);
+        }
+
+        // Next Smaller Element (NSE)
+        int[] nse = new int[n];
+        Stack<Integer> st2 = new Stack<>();
+        for (int i = n - 1; i >= 0; i--) {
+            while (!st2.isEmpty() && heights[st2.peek()] >= heights[i]) {
+                st2.pop();
+            }
+            nse[i] = st2.isEmpty() ? n : st2.peek();
+            st2.push(i);
+        }
+
+        // Calculate max area
+        int maxArea = 0;
+        for (int i = 0; i < n; i++) {
+            int width = nse[i] - pse[i] - 1;
+            int area = heights[i] * width;
+            maxArea = Math.max(maxArea, area);
+        }
+
+        return maxArea;
+    }
+
+    public static void main(String[] args) {
+        int[] heights = {2, 1, 5, 6, 2, 3};
+        System.out.println("Largest Rectangle Area: " + largestRectangleArea(heights));
+    }
+}
+
+ */
